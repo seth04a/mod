@@ -1,0 +1,44 @@
+﻿l_english:
+#Leaders and Advisors
+ KLI_Kettu: "Kettu"
+ KLI_Seth: "Seth"
+ KLI_MC: "McSnipeer"
+ KLI_Hidra: "Hidra"
+ KLI_Floom: "Floom"
+ KLI_Joe: "Joe"
+ KLI_Random: "Random"
+ KLI_Frank: "Frank"
+ KLI_Hann: "Hann Vok"
+
+#Leader Traits
+ rebellion_leader: "Rebellion Leader"
+ established_naval_officer: "Established Naval Officer"
+ proven_communist: "Proven Communist"
+ new_generation_socialist: "New Generation Socialist"
+
+#Ideas
+ local_reformer: "Local Reformer"
+ making_ends_meet: "Making ends meet"
+ pessimistic_Lithuanian_Nationalist: "Pessimist"
+
+#Spirits
+ Legacy_of_the_Saaremaa_Purge: "Legacy of the Saaremaa Purge"
+ Legacy_of_the_Saaremaa_Purge_desc: "The brutal actions of the Estonian regime during the Saaremaa Purge have left an indelible mark on the island’s people. What began as an effort to quash dissent has only deepened the resolve of the rebels, turning a local uprising into a full-scale resistance movement. The heavy-handed tactics have sown hatred and distrust toward the government, with entire communities rallying to the cause. However, the scars run deep. While the purge has galvanized support for the revolt, it has also drained the island’s manpower and left many wary of sustained conflict, leading to instability and recruitment challenges."
+
+#focusses
+ foreign_volunteers: "Foreign Volunteers"
+ foreign_volunteers_desc: "We cannot hold out on our own much longer, we need to seek international support!"
+ the_Kuressaare_munitions_plant: "Seize the Kuressaare munitions plant"
+ the_Kuressaare_munitions_plant_desc: "We must seize the Kuressaare munitions plant and start producing rifles before our small stockpile runs out!"
+ the_Hiiumaa_construction_sector: "The Hiiumaa construction sector"
+ the_Hiiumaa_construction_sector_desc: "While we have control of the island of Hiiumaa, it's inhabitants and industry are all but willing to aid us in our effort to build a better nation for all, and with the Estonians on our doorstep we must nationalize the construction sector before they start to work against us."
+
+#The great Estonian War
+ KLI_defence: "Pending Estonian invasion!"
+ KLI_defence_desc: "We have recently broken away from Estonia and it is very clear that they will not let us go so easily!"
+ EST_response_to_revolt: "Saaremaa revolt!"
+ EST_response_to_revolt_desc: "Saaremaa has revolted! We must quickly subdue the revolt before everything spirals out of control!"
+ EST_WAR_def: "Estonian Invasion!"
+ EST_WAR: "Seize the islands!"
+ Rudimentary_defences: "Rudimentary defences"
+ Rudimentary_defences_desc: "with the few resources we have we can still afford to build some defensive positions!"

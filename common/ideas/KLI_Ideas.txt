@@ -1,0 +1,15 @@
+ideas = {
+    country = {
+        Legacy_of_the_Saaremaa_Purge = {
+		removal_cost = -1
+		picture = generic_purge
+		modifier = {
+			political_power_cost = 0.1
+    			stability_factor = -0.2
+			conscription_factor = -0.75
+		}
+        }
+        my_idea_2 = {
+        }
+    }
+}

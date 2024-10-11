@@ -1,0 +1,238 @@
+characters ={
+	KLI_Kettu={
+		name=KLI_Kettu
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Kettu
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			traits={ rebellion_leader }
+			expire="1965.1.1.1"
+			# id=-1
+		}
+	}
+
+	KLI_Seth={
+		name=KLI_Seth
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Seth
+			}
+			army={
+				small=GFX_idea_KLI_Seth
+			}
+		}
+		navy_leader = {
+    		skill = 3
+    		attack_skill = 1
+    		defense_skill = 3
+    		maneuvering_skill = 5
+    		coordination_skill = 4
+    		# legacy_id = 10
+			visible = { has_completed_focus = foreign_volunteers}
+		}
+		advisor={
+			cost = 100		
+			slot = theorist
+			idea_token = KLI_Seth
+			ledger = navy
+			available = { has_completed_focus = foreign_volunteers}
+			allowed = {
+				original_tag = KLI
+			}
+			traits = {
+				naval_theorist
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = KLI_Seth_Chief
+			available = { has_completed_focus = foreign_volunteers}
+			allowed = {
+				original_tag = KLI
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	KLI_MC={
+		name=KLI_MC
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_MC
+			}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 4
+    		logistics_skill = 5
+			visible = { has_completed_focus = foreign_volunteers}
+		}
+	}
+
+	KLI_Hidra={
+		name=KLI_Hidra
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Hidra
+				small=GFX_idea_KLI_Hidra
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		idea_token = KLI_Hidra
+    		ledger = civilian
+    		traits = { local_reformer making_ends_meet }      # Unspecified cost defaults to 150.
+			available = { has_completed_focus = foreign_volunteers}
+		}
+	}
+
+	KLI_Hann={
+		name=KLI_Hann
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Hann
+			}
+			army={
+				small=GFX_idea_KLI_Hann
+			}
+		}
+		field_marshal = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 4
+    		logistics_skill = 5
+			visible = { has_completed_focus = foreign_volunteers}
+		}
+		advisor = {
+    		slot = theorist
+    		idea_token = KLI_Hann
+    		ledger = army
+    		traits = { military_theorist }      # Unspecified cost defaults to 150.
+			available = { has_completed_focus = foreign_volunteers}
+		}
+		advisor = {
+    		slot = army_chief
+    		idea_token = KLI_Hann_Chief
+    		ledger = army
+    		traits = { army_chief_defensive_3 }      # Unspecified cost defaults to 150.
+			available = { has_completed_focus = foreign_volunteers}
+		}
+	}
+
+	KLI_Random={
+		name=KLI_Random
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Random
+				small=GFX_idea_KLI_Random
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		idea_token = KLI_Random
+    		ledger = civilian
+    		traits = { head_of_intelligence }      # Unspecified cost defaults to 150.
+			available = { has_completed_focus = foreign_volunteers}
+		}
+	}
+
+	KLI_Joe={
+		name=KLI_Joe
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Joe
+				small=GFX_idea_KLI_Joe
+			}
+			army={
+				small=GFX_idea_KLI_Joe
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		idea_token = KLI_Joe
+    		ledger = civilian
+    		traits = { captain_of_industry }      # Unspecified cost defaults to 150.
+			available = { has_completed_focus = foreign_volunteers}
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 4
+    		logistics_skill = 5
+			visible = { has_completed_focus = foreign_volunteers}
+		}
+	}
+
+	KLI_Floom={
+		name=KLI_Floom
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Floom
+				small=GFX_idea_KLI_Floom
+			}
+			army={
+				small=GFX_idea_KLI_Floom
+			}
+		}
+		advisor={
+			cost = 100		
+			slot = theorist
+			idea_token = KLI_Floom
+			ledger = air
+			allowed = {
+			original_tag = KLI
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			available = { has_completed_focus = foreign_volunteers}
+		}
+		advisor = {
+    		slot = air_chief
+    		idea_token = KLI_Floom_Chief
+    		ledger = air
+    		traits = { air_chief_ground_support_3 }      # Unspecified cost defaults to 150.
+			available = { has_completed_focus = foreign_volunteers}
+		}
+	}
+
+	KLI_Frank={
+		name=KLI_Frank
+		portraits={
+			civilian={
+				large=GFX_portrait_KLI_Frank
+				small=GFX_idea_KLI_Frank
+			}
+			army={
+				small=GFX_idea_KLI_Frank
+			}
+		}
+		advisor = {
+    		slot = political_advisor
+    		idea_token = Frank
+    		ledger = civilian
+    		traits = { pessimistic_Lithuanian_Nationalist }      # Unspecified cost defaults to 150.
+			can_be_fired = no
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 1
+    		defense_skill = 1
+    		planning_skill = 1
+    		logistics_skill = 1
+		}
+	}
+}

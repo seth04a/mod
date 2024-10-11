@@ -1,0 +1,90 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_KLI_Seth"
+        texturefile = "gfx/leaders/KLI/portrait_kli_seth.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Seth"
+        texturefile = "gfx/interface/ideas/Seth_Minister.png"
+    }
+
+
+    spriteType = {
+        name = "GFX_portrait_KLI_Kettu"
+        texturefile = "gfx/leaders/KLI/portrait_kli_kettu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Kettu"
+        texturefile = "gfx/interface/ideas/Kettu_Minister.png"
+    }
+
+
+        spriteType = {
+        name = "GFX_portrait_KLI_MC"
+        texturefile = "gfx/leaders/KLI/portrait_kli_mc.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_MC"
+        texturefile = "gfx/interface/ideas/MC_Minister.png"
+    }
+
+
+    spriteType = {
+        name = "GFX_portrait_KLI_Hidra"
+        texturefile = "gfx/leaders/KLI/portrait_kli_hidra.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Hidra"
+        texturefile = "gfx/interface/ideas/Hidra_Minister.png"
+    }
+
+
+        spriteType = {
+        name = "GFX_portrait_KLI_Frank"
+        texturefile = "gfx/leaders/KLI/portrait_kli_frank.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Frank"
+        texturefile = "gfx/interface/ideas/Frank_Minister.png"
+    }
+
+
+    spriteType = {
+        name = "GFX_portrait_KLI_Floom"
+        texturefile = "gfx/leaders/KLI/portrait_kli_floom.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Floom"
+        texturefile = "gfx/interface/ideas/Floom_Minister.png"
+    }
+
+
+        spriteType = {
+        name = "GFX_portrait_KLI_Joe"
+        texturefile = "gfx/leaders/KLI/portrait_kli_joe.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Joe"
+        texturefile = "gfx/interface/ideas/Joe_Minister.png"
+    }
+
+
+    spriteType = {
+        name = "GFX_portrait_KLI_Hann"
+        texturefile = "gfx/leaders/KLI/portrait_kli_hann.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Hann"
+        texturefile = "gfx/interface/ideas/Hann_Minister.png"
+    }
+
+
+    spriteType = {
+        name = "GFX_portrait_KLI_Random"
+        texturefile = "gfx/leaders/KLI/portrait_kli_random.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KLI_Random"
+        texturefile = "gfx/interface/ideas/Random_Minister.png"
+    }
+}

@@ -1,0 +1,25 @@
+EST_response_to_revolt = {
+    icon = revolt
+    allowed = {
+        tag = EST
+    }
+
+    picture = GFX_decision_cat_picture_macedonian_organizations
+
+    visible = {
+        always = yes
+    }
+}
+
+KLI_defence = {
+    icon = revolt
+
+    picture = GFX_decision_cat_picture_macedonian_organizations
+
+    allowed = {
+        tag = KLI
+    }
+    visible = {
+        always = yes
+    }
+}

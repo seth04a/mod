@@ -1,0 +1,54 @@
+leader_traits = {
+    rebellion_leader = {
+        random = no
+        modifier_army_sub_unit_militia_defence_factor = 0.05   # 5% boost to militia defense
+        modifier_army_sub_unit_militia_attack_factor = 0.03   # 3% boost to militia attack
+        supply_consumption_factor = -0.1                      # 10% reduction in supply consumption
+        weekly_manpower = 100                                 # 100 manpower per week
+        war_support_factor = 0.15                             # 15% increase in war support
+        stability_factor = -0.02                              # 2% reduction in stability
+        attrition = -0.05                                     # 5% reduction in attrition
+    }
+
+    established_naval_officer = {
+        industrial_capacity_dockyard = 0.15  # 5% dockyard capacity boost
+        industrial_capacity_factory = -0.15
+        naval_speed_factor = 0.15                 # 15% ship speed boost
+        experience_gain_navy_factor = 0.1          # 10% faster naval experience gain
+    }
+
+    proven_communist = {
+        drift_defence_factor = 0.5             # Strong defense against ideological drift
+        communism_drift = 0.005                # Slow but steady spread of communism
+        stability_factor = 0.02                # 2% boost to stability
+        war_support_factor = 0.02              # 2% boost to war support
+        industrial_capacity_factory = 0.03                  # 3% increase in factory output
+    }
+
+    new_generation_socialist = {
+        drift_defence_factor = -0.3            # Easier for ideological drift to occur
+        communism_drift = 0.01                 # 1% drift toward communism
+        democratic_drift = 0.01                # 1% drift toward democracy
+        research_speed_factor = 0.03           # 3% faster research
+        stability_factor = -0.01               # 1% reduction in stability
+    }
+
+    local_reformer = {
+        industrial_capacity_factory = 0.05
+        production_speed_buildings_factor = 0.01
+        stability_factor = 0.01
+        democratic_drift = 0.01  
+    }
+
+    making_ends_meet = {
+        production_lack_of_resource_penalty_factor = -0.2
+    }
+
+    pessimistic_Lithuanian_Nationalist = {
+        stability_factor = -0.4
+        war_support_factor = -0.2
+        industrial_capacity_factory = -0.5
+        industrial_capacity_dockyard = -0.5
+        army_defence_factor = -0.2
+    }
+}
