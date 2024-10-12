@@ -8,9 +8,11 @@ focus_tree = {
     }
 
     focus = {
+
+        # foreignvolunteers focusses
         id = foreign_volunteers
         icon = GFX_focus_POL_develop_polish_shipbuilding
-        x = 6
+        x = 10
 		y = 0
         cost = 10
         completion_reward = {
@@ -25,7 +27,40 @@ focus_tree = {
 				}
 				promote_leader = yes
             }
-            add_country_leader_role = {
+            add_manpower = 8000
+            #custom_effect_tooltip = available_political_advisor
+            #show_ideas_tooltip = KLI_Hann
+            #show_ideas_tooltip = KLI_Hann_Chief
+            #show_ideas_tooltip = KLI_Seth
+            #show_ideas_tooltip = KLI_Seth_Chief
+            #show_ideas_tooltip = KLI_Joe
+            #show_ideas_tooltip = KLI_Random
+        }
+    }
+
+    focus = {
+        id = Iberian_contacts
+        icon = GFX_focus_por_iberian_summit
+        x = 9
+		y = 1
+        cost = 5
+        prerequisite = { focus = foreign_volunteers }
+        completion_reward = {
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = KLI_Floom
+            show_ideas_tooltip = KLI_Floom_Chief
+        }
+    }
+
+    focus = {
+        id = a_Swedish_Contact
+        icon = GFX_focus_generic_develop_sweden_silhouette
+        x = 11
+		y = 1
+        cost = 5
+        prerequisite = { focus = foreign_volunteers }
+        completion_reward = {
+                add_country_leader_role = {
 				character = KLI_MC
 				country_leader = {
 					expire = "1965.1.1"
@@ -36,28 +71,27 @@ focus_tree = {
 				}
 				promote_leader = yes
             }
-            add_country_leader_role = {
-				character = KLI_Hidra
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = socialism
-					traits = {
-						new_generation_socialist
-					}
+        }
+    }
+
+
+    focus = {
+        id = secure_island_militias
+        icon = GFX_focus_chi_army_reform
+        x = 6
+		y = 0
+        cost = 5
+        completion_reward = {
+            random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Island militia\" division_template = \"Island Militia\" start_experience_factor = 0.5" 
+					owner = KLI
 				}
-				promote_leader = yes
-            }
-            add_manpower = 8000
-            custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = KLI_Hidra
-            show_ideas_tooltip = KLI_Floom
-            show_ideas_tooltip = KLI_Floom_Chief
-            show_ideas_tooltip = KLI_Hann
-            show_ideas_tooltip = KLI_Hann_Chief
-            show_ideas_tooltip = KLI_Seth
-            show_ideas_tooltip = KLI_Seth_Chief
-            show_ideas_tooltip = KLI_Joe
-            show_ideas_tooltip = KLI_Random
+				create_unit = {
+					division = "name = \"Island militia\" division_template = \"Island Militia\" start_experience_factor = 0.5" 
+					owner = KLI
+				}
+			}
         }
     }
 
@@ -67,7 +101,7 @@ focus_tree = {
         x = 7
 		y = 1
         cost = 10
-        prerequisite = { focus = foreign_volunteers }
+        prerequisite = { focus = secure_island_militias }
         completion_reward = {
             random_owned_controlled_state = {
 				limit = {
@@ -90,7 +124,7 @@ focus_tree = {
         x = 5
 		y = 1
         cost = 10
-        prerequisite = { focus = foreign_volunteers }
+        prerequisite = { focus = secure_island_militias }
         completion_reward = {
             random_owned_controlled_state = {
 				limit = {
@@ -104,6 +138,41 @@ focus_tree = {
 				    instant_build = yes
                 }
             }
+        }
+    }
+
+    focus = {
+        id = adress_the_supply_shortages
+        icon = GFX_goal_generic_defence
+        x = 8
+		y = 2
+        cost = 10
+        prerequisite = { focus = the_Kuressaare_munitions_plant }
+        prerequisite = { focus = Iberian_contacts }
+        completion_reward  = {
+            add_ideas = {
+                democrat_in_kli_inner_circle
+            }
+            add_ideas = {
+                fascist_in_kli_inner_circle
+            }
+            add_ideas = {
+                communist_in_kli_inner_circle
+            }
+            add_country_leader_role = {
+				character = KLI_Hidra
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = socialism
+					traits = {
+						new_generation_socialist
+					}
+				}
+				promote_leader = yes
+            }
+
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = KLI_Hidra
         }
     }
 }

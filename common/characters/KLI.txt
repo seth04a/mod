@@ -76,7 +76,7 @@ characters ={
     		defense_skill = 3
     		planning_skill = 4
     		logistics_skill = 5
-			visible = { has_completed_focus = foreign_volunteers}
+			visible = { has_completed_focus = a_Swedish_Contact}
 		}
 	}
 
@@ -93,7 +93,7 @@ characters ={
     		idea_token = KLI_Hidra
     		ledger = civilian
     		traits = { local_reformer making_ends_meet }      # Unspecified cost defaults to 150.
-			available = { has_completed_focus = foreign_volunteers}
+			available = { has_completed_focus = adress_the_supply_shortages}
 		}
 	}
 
@@ -198,14 +198,14 @@ characters ={
 			traits = {
 				air_warfare_theorist
 			}
-			available = { has_completed_focus = foreign_volunteers}
+			available = { has_completed_focus = Iberian_contacts}
 		}
 		advisor = {
     		slot = air_chief
     		idea_token = KLI_Floom_Chief
     		ledger = air
     		traits = { air_chief_ground_support_3 }      # Unspecified cost defaults to 150.
-			available = { has_completed_focus = foreign_volunteers}
+			available = { has_completed_focus = Iberian_contacts}
 		}
 	}
 

@@ -10,19 +10,4 @@ division_template = {
 }
 
 units = {
-	division = {
-		name = "Saaremaa Island Militia 1"
-		location = 6201
-		division_template = "Island Militia"
-		start_experience_factor = 0.0
-		start_equipment_factor = 0.1
-	}
-	
-	division = {
-		name = "Saaremaa Island Militia 1"
-		location = 185
-		division_template = "Island Militia"
-		start_experience_factor = 0.0
-		start_equipment_factor = 2
-	}
 }

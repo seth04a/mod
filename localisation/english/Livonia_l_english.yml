@@ -22,16 +22,24 @@
  pessimistic_Lithuanian_Nationalist: "Pessimist"
 
 #Spirits
+ democrat_in_kli_inner_circle: "Democrats in the inner circle"
+ democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in democracy."
  Legacy_of_the_Saaremaa_Purge: "Legacy of the Saaremaa Purge"
  Legacy_of_the_Saaremaa_Purge_desc: "The brutal actions of the Estonian regime during the Saaremaa Purge have left an indelible mark on the island’s people. What began as an effort to quash dissent has only deepened the resolve of the rebels, turning a local uprising into a full-scale resistance movement. The heavy-handed tactics have sown hatred and distrust toward the government, with entire communities rallying to the cause. However, the scars run deep. While the purge has galvanized support for the revolt, it has also drained the island’s manpower and left many wary of sustained conflict, leading to instability and recruitment challenges."
 
 #focusses
- foreign_volunteers: "Foreign Volunteers"
- foreign_volunteers_desc: "We cannot hold out on our own much longer, we need to seek international support!"
+ a_Swedish_Contact: "A Swedish Contact"
+ a_Swedish_Contact_desc: "We've gained contact with a Swedish general willing to join our cause. (This character wil also become a general in our army. I just can't figure out how to use the tooltips)"
+ secure_island_militias: "Secure the Island militias"
+ secure_island_militias_desc: "We might have gained control of the islands, but their garrisons are everything but loyal to us, we must change that now before it's too late."
+ foreign_volunteers: "Call on Foreign Volunteers"
+ foreign_volunteers_desc: "We cannot hold out on our own for long, we need to seek international support!"
  the_Kuressaare_munitions_plant: "Seize the Kuressaare munitions plant"
  the_Kuressaare_munitions_plant_desc: "We must seize the Kuressaare munitions plant and start producing rifles before our small stockpile runs out!"
  the_Hiiumaa_construction_sector: "The Hiiumaa construction sector"
  the_Hiiumaa_construction_sector_desc: "While we have control of the island of Hiiumaa, it's inhabitants and industry are all but willing to aid us in our effort to build a better nation for all, and with the Estonians on our doorstep we must nationalize the construction sector before they start to work against us."
+ adress_the_supply_shortages: "Adressing the Supply issues"
+ adress_the_supply_shortages_desc: "''I know a man who can help us!'' Floom quickly said. ''You can call him, a friend of mine. A jolly good fellow, very intuitive and resourcefull!''"
 
 #The great Estonian War
  KLI_defence: "Pending Estonian invasion!"
