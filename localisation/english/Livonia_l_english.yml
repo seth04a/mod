@@ -24,12 +24,22 @@
 #Spirits
  democrat_in_kli_inner_circle: "Democrats in the inner circle"
  democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in democracy."
+ communist_in_kli_inner_circle: "Communists in the inner circle"
+ democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in communism."
+ fascist_in_kli_inner_circle: "Fascists in the inner circle"
+ fascist_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in fascism."
  Legacy_of_the_Saaremaa_Purge: "Legacy of the Saaremaa Purge"
  Legacy_of_the_Saaremaa_Purge_desc: "The brutal actions of the Estonian regime during the Saaremaa Purge have left an indelible mark on the island’s people. What began as an effort to quash dissent has only deepened the resolve of the rebels, turning a local uprising into a full-scale resistance movement. The heavy-handed tactics have sown hatred and distrust toward the government, with entire communities rallying to the cause. However, the scars run deep. While the purge has galvanized support for the revolt, it has also drained the island’s manpower and left many wary of sustained conflict, leading to instability and recruitment challenges."
 
 #focusses
+ Iberian_contacts: "Iberian Contact"
+ Iberian_contacts_desc: "We made contact with someone willing to help us in the Iberian Peninsula!"
+ bullets_cannot_damage_this_vehicle: "Bullets cannot damage this vehicle"
+ bullets_cannot_damage_this_vehicle_desc: "Joe kept shooting a BTR in COD and we kept seeing that message, so here's the meme."
+ english_channel_volunteers: "Volunteers from the Channel"
+ english_channel_volunteers_desc: "Volunteers from Belgium and England have shown up to aid us in our effort."
  a_Swedish_Contact: "A Swedish Contact"
- a_Swedish_Contact_desc: "We've gained contact with a Swedish general willing to join our cause. (This character wil also become a general in our army. I just can't figure out how to use the tooltips)"
+ a_Swedish_Contact_desc: "We've gained contact with a Swedish officer, he and his battalion are willing to join our cause. (This character wil also become a general in our army. I just can't figure out how to use the tooltips)"
  secure_island_militias: "Secure the Island militias"
  secure_island_militias_desc: "We might have gained control of the islands, but their garrisons are everything but loyal to us, we must change that now before it's too late."
  foreign_volunteers: "Call on Foreign Volunteers"
@@ -50,3 +60,8 @@
  EST_WAR: "Seize the islands!"
  Rudimentary_defences: "Rudimentary defences"
  Rudimentary_defences_desc: "with the few resources we have we can still afford to build some defensive positions!"
+
+#tooltips
+ kli_promote_MC:0 "§Y McSnipeer §!gets §Ypromoted to General §!"
+ kli_promote_Han:0 "§Y Hann Vok §!gets §Ypromoted to Field Marshal §!"
+ kli_promote_Joe:0 "§Y Joe §!gets §Ypromoted to General §!"

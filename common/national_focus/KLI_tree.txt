@@ -12,29 +12,14 @@ focus_tree = {
         # foreignvolunteers focusses
         id = foreign_volunteers
         icon = GFX_focus_POL_develop_polish_shipbuilding
-        x = 10
+        x = 11
 		y = 0
         cost = 10
         completion_reward = {
-			add_country_leader_role = {
-				character = KLI_Seth
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = rexism
-					traits = {
-						established_naval_officer
-					}
-				}
-				promote_leader = yes
-            }
             add_manpower = 8000
-            #custom_effect_tooltip = available_political_advisor
-            #show_ideas_tooltip = KLI_Hann
-            #show_ideas_tooltip = KLI_Hann_Chief
-            #show_ideas_tooltip = KLI_Seth
-            #show_ideas_tooltip = KLI_Seth_Chief
-            #show_ideas_tooltip = KLI_Joe
-            #show_ideas_tooltip = KLI_Random
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = KLI_Joe
+            custom_effect_tooltip = kli_promote_Joe
         }
     }
 
@@ -60,20 +45,57 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = foreign_volunteers }
         completion_reward = {
-                add_country_leader_role = {
-				character = KLI_MC
+            add_ideas = {
+                communist_in_kli_inner_circle
+            }
+            add_country_leader_role = {
+			    character = KLI_MC
+			    country_leader = {
+				    expire = "1965.1.1"
+				    ideology = stalinism
+				    traits = {
+					    proven_communist
+			    	}
+			    }
+			promote_leader = yes
+            }
+            add_manpower = 1000
+
+            custom_effect_tooltip = kli_promote_MC
+        }
+    }
+
+    focus = {
+        id = english_channel_volunteers
+        icon = GFX_goal_generic_national_unity
+        x = 13
+		y = 1
+        cost = 5
+        prerequisite = { focus = foreign_volunteers }
+        completion_reward = {
+            add_ideas = {
+                fascist_in_kli_inner_circle
+            }
+            add_country_leader_role = {
+				character = KLI_Seth
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = stalinism
+					ideology = rexism
 					traits = {
-						proven_communist
+						established_naval_officer
 					}
 				}
 				promote_leader = yes
             }
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = KLI_Hann
+            show_ideas_tooltip = KLI_Hann_Chief
+            show_ideas_tooltip = KLI_Seth
+            show_ideas_tooltip = KLI_Seth_Chief
+            show_ideas_tooltip = KLI_Random
+            custom_effect_tooltip = kli_promote_Han
         }
     }
-
 
     focus = {
         id = secure_island_militias
@@ -153,12 +175,6 @@ focus_tree = {
             add_ideas = {
                 democrat_in_kli_inner_circle
             }
-            add_ideas = {
-                fascist_in_kli_inner_circle
-            }
-            add_ideas = {
-                communist_in_kli_inner_circle
-            }
             add_country_leader_role = {
 				character = KLI_Hidra
 				country_leader = {
@@ -173,6 +189,17 @@ focus_tree = {
 
             custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = KLI_Hidra
+        }
+    }
+
+    focus = {
+        id = bullets_cannot_damage_this_vehicle
+        icon = GFX_focus_NZL_bob_semple_tank
+        cost = 10
+        x = 3
+        y = 0
+        completion_reward = {
+            
         }
     }
 }
