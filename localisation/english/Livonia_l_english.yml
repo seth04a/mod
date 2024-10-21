@@ -28,10 +28,16 @@
  democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in communism."
  fascist_in_kli_inner_circle: "Fascists in the inner circle"
  fascist_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in fascism."
+ communist_in_kli_inner_circle: "Communists in the inner circle"
+ democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in communism."
+ fascist_in_kli_inner_circle: "Fascists in the inner circle"
+ fascist_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in fascism."
  Legacy_of_the_Saaremaa_Purge: "Legacy of the Saaremaa Purge"
  Legacy_of_the_Saaremaa_Purge_desc: "The brutal actions of the Estonian regime during the Saaremaa Purge have left an indelible mark on the island’s people. What began as an effort to quash dissent has only deepened the resolve of the rebels, turning a local uprising into a full-scale resistance movement. The heavy-handed tactics have sown hatred and distrust toward the government, with entire communities rallying to the cause. However, the scars run deep. While the purge has galvanized support for the revolt, it has also drained the island’s manpower and left many wary of sustained conflict, leading to instability and recruitment challenges."
 
 #focusses
+ Setup_Supply_Routes: "Setup Supply Routes"
+ Setup_Supply_Routes_desc: "There are no resources on the islands of Saaremaa, we can use Seth's naval expertise and McSnipeer's knowledge of the Baltic sea to seize a few strategic islands which will allow us to set up  smuggling routes that will supply us with the necessary resources."
  Iberian_contacts: "Iberian Contact"
  Iberian_contacts_desc: "We made contact with someone willing to help us in the Iberian Peninsula!"
  bullets_cannot_damage_this_vehicle: "Bullets cannot damage this vehicle"
@@ -61,7 +67,12 @@
  Rudimentary_defences: "Rudimentary defences"
  Rudimentary_defences_desc: "with the few resources we have we can still afford to build some defensive positions!"
 
+#Island seizing and resources
+ KLI_seize_baltic_islands: "Seizing the Baltic islands and resource routes"
+ KLI_seize_baltic_islands_desc: "By seizing the Baltic islands, we can open an easy way for our smuggling ships to bring in resources."
+
 #tooltips
  kli_promote_MC:0 "§Y McSnipeer §!gets §Ypromoted to General §!"
  kli_promote_Han:0 "§Y Hann Vok §!gets §Ypromoted to Field Marshal §!"
  kli_promote_Joe:0 "§Y Joe §!gets §Ypromoted to General §!"
+ KLI_seize_islands:0 "Unlocks decisions to seize Bornholm, Götland and Aland while also setting up supply routes."

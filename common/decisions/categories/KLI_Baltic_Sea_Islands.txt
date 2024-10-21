@@ -1,0 +1,13 @@
+KLI_seize_baltic_islands = {
+    icon = revolt
+
+    picture = GFX_decision_cat_picture_FIN_karelian_forest_guerillas
+
+    allowed = {
+        tag = KLI
+    }
+
+    visible = {
+        has_completed_focus = Setup_Supply_Routes
+    }
+}
