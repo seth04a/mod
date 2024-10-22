@@ -21,9 +21,6 @@ focus_tree = {
             custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = KLI_Joe
             custom_effect_tooltip = kli_promote_Joe
-            custom_effect_tooltip = available_political_advisor
-            show_ideas_tooltip = KLI_Joe
-            custom_effect_tooltip = kli_promote_Joe
         }
     }
 
@@ -61,29 +58,38 @@ focus_tree = {
 					    proven_communist
 			    	}
 			    }
-			promote_leader = yes
-            add_ideas = {
-                communist_in_kli_inner_circle
+                            promote_leader = yes
             }
-            add_country_leader_role = {
-			    character = KLI_MC
-			    country_leader = {
-				    expire = "1965.1.1"
-				    ideology = stalinism
-				    traits = {
-					    proven_communist
-			    	}
-			    }
-			promote_leader = yes
-            }
+            division_template = {
+				name = "Swedish Royal Guards"
+				priority = 1
+				division_names_group = SWE_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                    infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+				support = {
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Swedish Royal Guards Regiment\" division_template = \"Swedish Royal Guards\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+			}
             add_manpower = 1000
 
             custom_effect_tooltip = kli_promote_MC
-            add_manpower = 1000
-
-            custom_effect_tooltip = kli_promote_MC
+            
         }
     }
+
 
     focus = {
         id = english_channel_volunteers
@@ -246,6 +252,23 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = armor
+            }
+        }
+    }
+
+    focus = {
+        id = but_this_can
+        icon = GFX_goal_generic_army_artillery2
+        cost = 10
+        x = 3
+        y = 1
+        prerequisite = { focus = bullets_cannot_damage_this_vehicle }
+        completion_reward = {
+            add_tech_bonus = {
+				name = POL_anti_tank_guns
+				bonus = 1.0
+				uses = 1
+				category = cat_anti_tank
             }
         }
     }
