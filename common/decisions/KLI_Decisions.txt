@@ -64,21 +64,141 @@ KLI_defence = {
 }
 
 KLI_seize_baltic_islands = {
-    prepare_seize_bornholm = {
+    add_men_to_smuggle_routes = {
         activation = {
             always = yes
         }
         available = {
 			has_manpower > 500
 		}
-        cost = 100;
-        fire_only_once = yes
+        cost = 10;
         days_remove = 30;
         complete_effect = {
 			add_manpower = -500
 		}
-        remove_effect = {
-            
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					var = smuggle_manpower
+					value = 500
+				}
+				clamp_variable = {
+					var = smuggle_manpower
+					min = 0
+				}
+				custom_effect_tooltip = add_500_manpower_kli
+			}
+		}
+    }
+
+    expand_smuggle_fleet = {
+        activation = {
+            always = yes
+        }
+        available = {
+			has_equipment = { convoy_1 > 0 }
+		}
+        cost = 10;
+        days_remove = 1;
+        complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = convoy_1
+			    amount = -1
+		    }
+		}
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					var = smuggle_convoy
+					value = 1
+				}
+				clamp_variable = {
+					var = smuggle_convoy
+					min = 0
+				}
+				custom_effect_tooltip = add_500_manpower_kli
+			}
+		}
+    }
+    
+    expand_smuggle_fleet_arsenal = {
+        activation = {
+            always = yes
+        }
+        available = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+        cost = 10;
+        days_remove = 30;
+        complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -100
+		    }
+		}
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					var = smuggle_weapon
+					value = 100
+				}
+				clamp_variable = {
+					var = smuggle_weapon
+					min = 0
+				}
+				custom_effect_tooltip = add_500_manpower_kli
+			}
+		}
+    }
+    
+    seize_bornholm = {
+        activation = {
+            always = yes
+        }
+        available = {
+            check_variable = {
+                smuggle_convoy > 19
+                smuggle_manpower > 999
+				smuggle_weapon > 999
+		    }
+        }
+    }
+
+    seize_gotland = {
+        activation = {
+            always = yes
+        }
+        available = {
+            check_variable = {
+                smuggle_convoy > 19
+                smuggle_manpower > 999
+				smuggle_weapon > 999
+		    }
+        }
+    }
+
+    seize_aland = {
+        activation = {
+            always = yes
+        }
+        available = {            
+            check_variable = {
+                smuggle_convoy > 19
+                smuggle_manpower > 999
+				smuggle_weapon > 999
+		    }
+        }
+    }
+    
+    activate_the_routes = {
+        activation = {
+            always = yes
+        }
+        available{
+            check_variable = {
+                smuggle_convoy > 0
+                smuggle_manpower > 0
+		    }
         }
     }
 }

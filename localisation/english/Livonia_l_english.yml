@@ -71,10 +71,11 @@
 
 #Island seizing and resources
  KLI_seize_baltic_islands: "Seizing the Baltic islands and resource routes"
- KLI_seize_baltic_islands_desc: "By seizing the Baltic islands, we can open an easy way for our smuggling ships to bring in resources."
+ KLI_seize_baltic_islands_desc: "By seizing the Baltic islands, we can open an easy way for our smuggling ships to bring in resources.\n\nOur current invested strength is \nManpower: §Y[?KLI.smuggle_manpower]§!\nConvoys: §Y[?KLI.smuggle_convoy]§!\nWeapons: §Y[?KLI.smuggle_weapon]§!"
 
 #tooltips
  kli_promote_MC:0 "§Y McSnipeer §!gets §Ypromoted to General §!"
  kli_promote_Han:0 "§Y Hann Vok §!gets §Ypromoted to Field Marshal §!"
  kli_promote_Joe:0 "§Y Joe §!gets §Ypromoted to General §!"
  KLI_seize_islands:0 "Unlocks decisions to seize Bornholm, Götland and Aland while also setting up supply routes."
+ add_500_manpower_kli:0 "Adds 500 manpower to the operations pool"
