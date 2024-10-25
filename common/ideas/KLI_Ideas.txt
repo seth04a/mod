@@ -10,34 +10,7 @@ ideas = {
 			}
         }
         my_idea_2 = {
+			
         }
-
-		democrat_in_kli_inner_circle = {
-			removal_cost = -1
-			picture = generic_democratic_drift_bonus
-			modifier = {
-				political_power_gain = 0.1
-    			stability_factor = 0.05
-				democratic_drift = 0.05
-			}
-		}
-
-		communist_in_kli_inner_circle = {
-			removal_cost = -1
-			picture = generic_communism_drift_bonus
-			modifier = {
-				army_attack_factor = 0.05
-				communism_drift = 0.05
-			}
-		}
-
-		fascist_in_kli_inner_circle = {
-			removal_cost = -1
-			picture = generic_fascism_drift_2
-			modifier = {
-				army_defence_factor = 0.1
-				fascism_drift = 0.05
-			}
-		}
     }
 }

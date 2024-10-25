@@ -22,16 +22,6 @@
  pessimistic_Lithuanian_Nationalist: "Pessimist"
 
 #Spirits
- democrat_in_kli_inner_circle: "Democrats in the inner circle"
- democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in democracy."
- communist_in_kli_inner_circle: "Communists in the inner circle"
- democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in communism."
- fascist_in_kli_inner_circle: "Fascists in the inner circle"
- fascist_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in fascism."
- communist_in_kli_inner_circle: "Communists in the inner circle"
- democrat_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in communism."
- fascist_in_kli_inner_circle: "Fascists in the inner circle"
- fascist_in_kli_inner_circle_desc: "There are members in the revolution's inner circle who firmly believe in fascism."
  Legacy_of_the_Saaremaa_Purge: "Legacy of the Saaremaa Purge"
  Legacy_of_the_Saaremaa_Purge_desc: "The brutal actions of the Estonian regime during the Saaremaa Purge have left an indelible mark on the island’s people. What began as an effort to quash dissent has only deepened the resolve of the rebels, turning a local uprising into a full-scale resistance movement. The heavy-handed tactics have sown hatred and distrust toward the government, with entire communities rallying to the cause. However, the scars run deep. While the purge has galvanized support for the revolt, it has also drained the island’s manpower and left many wary of sustained conflict, leading to instability and recruitment challenges."
 
@@ -72,10 +62,32 @@
 #Island seizing and resources
  KLI_seize_baltic_islands: "Seizing the Baltic islands and resource routes"
  KLI_seize_baltic_islands_desc: "By seizing the Baltic islands, we can open an easy way for our smuggling ships to bring in resources.\n\nOur current invested strength is \nManpower: §Y[?KLI.smuggle_manpower]§!\nConvoys: §Y[?KLI.smuggle_convoy]§!\nWeapons: §Y[?KLI.smuggle_weapon]§!"
+ add_men_to_smuggle_routes: "Add men to the smuggling fleet"
+ add_men_to_smuggle_routes_desc: "By adding more men to the smuggle routes we can improve their efficiency"
+ expand_smuggle_fleet: "Add more convoys"
+ expand_smuggle_fleet_desc: "By adding more convoys to the smuggle routes we can reduce the time it takes for us to get more resources"
+ expand_smuggle_fleet_arsenal: "Add more guns"
+ expand_smuggle_fleet_arsenal_desc: "By adding more weapons to the smuggle routes we can improve the amount of resources they bring back"
+ seize_bornholm: "Seize Bornholm"
+ seize_bornholm_desc: ""
+ seize_gotland: "Seize Gotland"
+ seize_gotland_desc: ""
+ seize_aland: "Seize Aland"
+ seize_aland_desc: ""
+ activate_the_routes: "Start smuggling"
+ activate_the_routes_desc: ""
+
+#party names
+ KLI_the_Livonian_armed_forces: "The Livonian Armed Forces"
+ KLI_the_army: "The army"
+ KLI_the_Livonian_navy: "The Livonian Navy"
+ KLI_the_navy: "The navy"
+ KLI_the_Livonian_airforce: "The Livonian Airforce"
+ KLI_the_airforce: "The airforce"
 
 #tooltips
- kli_promote_MC:0 "§Y McSnipeer §!gets §Ypromoted to General §!"
- kli_promote_Han:0 "§Y Hann Vok §!gets §Ypromoted to Field Marshal §!"
- kli_promote_Joe:0 "§Y Joe §!gets §Ypromoted to General §!"
+ kli_promote_MC:0 "§YMcSnipeer §!gets §Ypromoted to General §!"
+ kli_promote_Han:0 "§YHann Vok §!gets §Ypromoted to Field Marshal §!"
+ kli_promote_Joe:0 "§YJoe §!gets §Ypromoted to General §!"
  KLI_seize_islands:0 "Unlocks decisions to seize Bornholm, Götland and Aland while also setting up supply routes."
  add_500_manpower_kli:0 "Adds 500 manpower to the operations pool"

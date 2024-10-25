@@ -46,9 +46,6 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = foreign_volunteers }
         completion_reward = {
-            add_ideas = {
-                communist_in_kli_inner_circle
-            }
             add_country_leader_role = {
 			    character = KLI_MC
 			    country_leader = {
@@ -60,6 +57,9 @@ focus_tree = {
 			    }
                             promote_leader = yes
             }
+
+            set_party_name = { ideology = communism long_name = KLI_the_Livonian_armed_forces name = KLI_the_army }
+
             division_template = {
 				name = "Swedish Royal Guards"
 				priority = 1
@@ -99,9 +99,6 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = foreign_volunteers }
         completion_reward = {
-            add_ideas = {
-                fascist_in_kli_inner_circle
-            }
             add_country_leader_role = {
 				character = KLI_Seth
 				country_leader = {
@@ -113,6 +110,9 @@ focus_tree = {
 				}
 				promote_leader = yes
             }
+
+            set_party_name = { ideology = fascism long_name = KLI_the_Livonian_navy name = KLI_the_navy }
+
             custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = KLI_Hann
             show_ideas_tooltip = KLI_Hann_Chief
@@ -219,9 +219,6 @@ focus_tree = {
         prerequisite = { focus = the_Kuressaare_munitions_plant }
         prerequisite = { focus = Iberian_contacts }
         completion_reward  = {
-            add_ideas = {
-                democrat_in_kli_inner_circle
-            }
             add_country_leader_role = {
 				character = KLI_Hidra
 				country_leader = {
@@ -233,6 +230,8 @@ focus_tree = {
 				}
 				promote_leader = yes
             }
+
+            set_party_name = { ideology = democratic long_name = KLI_the_Livonian_airforce name = KLI_the_airforce }
 
             custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = KLI_Hidra
