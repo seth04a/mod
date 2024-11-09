@@ -116,6 +116,7 @@ bookmarks = {
 			history = "KLI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				Legacy_of_the_Saaremaa_Purge
 			}
 			focuses = {
 			}

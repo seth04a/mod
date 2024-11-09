@@ -199,6 +199,7 @@ bookmarks = {
 				Legacy_of_the_Saaremaa_Purge
 			}
 			focuses = {
+				the_baltic_island_federation
 			}
 		}
 

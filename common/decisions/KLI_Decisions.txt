@@ -72,7 +72,7 @@ KLI_seize_baltic_islands = {
 			has_manpower > 500
 		}
         cost = 10;
-        days_remove = 30;
+        days_remove = 3;
         complete_effect = {
 			add_manpower = -500
 		}
@@ -129,7 +129,7 @@ KLI_seize_baltic_islands = {
 			has_equipment = { infantry_equipment > 99 }
 		}
         cost = 10;
-        days_remove = 30;
+        days_remove = 3;
         complete_effect = {
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
@@ -155,12 +155,28 @@ KLI_seize_baltic_islands = {
         activation = {
             always = yes
         }
-        available = {
+        available = {            
             check_variable = {
-                smuggle_convoy > 19
-                smuggle_manpower > 999
-				smuggle_weapon > 999
+                smuggle_convoy > 0
+                smuggle_manpower > 499
+				smuggle_weapon > 499
 		    }
+            NOT = { has_country_flag = Bornholm_seized}
+        }
+
+        visible = {
+            NOT = { has_country_flag = Bornholm_seized}
+        }
+
+        remove_effect = {
+            KLI = {
+			    transfer_state = 910
+		    }
+            add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 5
+		    }
+            set_country_flag = Bornholm_seized
         }
     }
 
@@ -168,12 +184,27 @@ KLI_seize_baltic_islands = {
         activation = {
             always = yes
         }
-        available = {
+        available = {            
             check_variable = {
-                smuggle_convoy > 19
-                smuggle_manpower > 999
-				smuggle_weapon > 999
+                smuggle_convoy > 0
+                smuggle_manpower > 1499
+				smuggle_weapon > 1499
 		    }
+            NOT = { has_country_flag = Gotland_seized}
+        }
+
+        visible = {
+            NOT = { has_country_flag = Gotland_seized}
+        }
+        remove_effect = {
+            KLI = {
+			    transfer_state = 124
+		    }
+            add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 5
+		    }            
+            set_country_flag = Gotland_seized
         }
     }
 
@@ -183,22 +214,143 @@ KLI_seize_baltic_islands = {
         }
         available = {            
             check_variable = {
-                smuggle_convoy > 19
+                smuggle_convoy > 0
                 smuggle_manpower > 999
 				smuggle_weapon > 999
 		    }
+            add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 5
+		    }
+            NOT = { has_country_flag = Aland_seized}
         }
+
+        visible = {
+            NOT = { has_country_flag = Aland_seized}
+        }
+
+        remove_effect = {
+            KLI = {
+			    transfer_state = 145
+		    }
+            add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 5
+		    }
+            set_country_flag = Aland_seized
+        }        
     }
     
     activate_the_routes = {
         activation = {
             always = yes
         }
-        available{
+        available = {            
             check_variable = {
                 smuggle_convoy > 0
-                smuggle_manpower > 0
+                smuggle_manpower > 499
 		    }
+        }
+        fire_only_once = yes
+        remove_effect = {
+            set_country_flag = KLI_smuggling
+        }
+    }
+
+    KLI_Resources = {
+        activation = {
+            has_civil_war = no
+            has_country_flag = KLI_smuggling
+        }
+        available = {
+            NOT = {has_country_flag = KLI_smuggling}
+        }
+        icon = mission_icon
+        days_mission_timeout = 10
+
+        remove_effect ={
+            random_list = {
+                10 = {
+                    modifier = {
+                        factor = smuggle_convoy
+                        always = yes
+                    }
+
+                    effect_tooltip = random_resource_arrives
+
+                    random_list = {
+                        10 = {
+			                811 = {
+				                add_resource = {
+					                type = oil
+					                amount = 1
+				                }
+			                }
+                        }
+                        10 = {
+			                811 = {
+				                add_resource = {
+					                type = steel
+					                amount = 1
+				                }
+			                }
+                        }
+                        10 = {
+			                811 = {
+				                add_resource = {
+					                type = aluminium
+					                amount = 1
+				                }
+			                }
+                        }
+                        10 = {
+			                811 = {
+				                add_resource = {
+					                type = tungsten
+					                amount = 1
+				                }
+			                }
+                        }
+                        10 = {
+			                811 = {
+				                add_resource = {
+					                type = chromium
+					                amount = 1
+				                }
+			                }
+                        }
+                        10 = {
+			                811 = {
+				                add_resource = {
+					                type = rubber
+					                amount = 1
+				                }
+			                }
+                        }
+                        10 = {
+                            add_equipment_to_stockpile = {
+			                    type = infantry_equipment
+			                    amount = 100
+		                    }
+                        }
+                        10 = {
+                            add_equipment_to_stockpile = {
+			                    type = convoy
+			                    amount = 1
+		                    }
+                        }
+                    }
+                }
+                10 = {
+                    modifier = {
+                        factor = 1
+                        always = yes
+                    }
+                    effect_tooltip = {
+						custom_effect_tooltip = nothing
+					}
+                }
+            }
         }
     }
 }

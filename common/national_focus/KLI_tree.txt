@@ -7,6 +7,8 @@ focus_tree = {
         }
     }
 
+    default = no
+
     focus = {
 
         # foreignvolunteers focusses
@@ -84,6 +86,10 @@ focus_tree = {
 				}
 			}
             add_manpower = 1000
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1000
+		    }
 
             custom_effect_tooltip = kli_promote_MC
             
@@ -128,7 +134,7 @@ focus_tree = {
         icon = GFX_focus_generic_baltic_sea_fleet
         x = 12
 		y = 2
-        cost = 5
+        cost = 2
         prerequisite = { focus = english_channel_volunteers }
         prerequisite = { focus = a_Swedish_Contact }
         completion_reward = {
@@ -239,6 +245,168 @@ focus_tree = {
     }
 
     focus = {
+        id = the_island_of_bornholm
+        relative_position_id = Setup_Supply_Routes
+        prerequisite = { focus = Setup_Supply_Routes }
+        available = { has_country_flag = Bornholm_seized }
+        icon = GFX_goal_generic_construct_naval_dockyard
+        cost = 2
+        x = -2
+        y = 1
+        completion_reward = {
+            910 = {
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    focus = {
+        id = the_island_of_gotland
+        relative_position_id = Setup_Supply_Routes
+        prerequisite = { focus = Setup_Supply_Routes }
+        available = { has_country_flag = Gotland_seized }
+        icon = GFX_focus_generic_industry_1
+        cost = 2
+        x = 0
+        y = 1
+        completion_reward = {
+            124 = {
+                add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    focus = {
+        id = the_island_of_aland
+        relative_position_id = Setup_Supply_Routes
+        prerequisite = { focus = Setup_Supply_Routes }
+        available = { has_country_flag = Aland_seized }
+        icon = GFX_goal_generic_air_bomber
+        cost = 2
+        x = 2
+        y = 1
+        completion_reward = {
+            145 = {
+                add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+            }
+            add_equipment_to_stockpile = {
+				type = large_plane_airframe
+				amount = 20
+				producer = GER
+            }
+        }
+    } 
+
+    focus = {
+        id = the_baltic_island_federation
+        relative_position_id = the_island_of_gotland
+        prerequisite = { focus = the_island_of_aland }
+        prerequisite = { focus = the_island_of_gotland }
+        prerequisite = { focus = the_island_of_bornholm }
+        icon = GFX_focus_SOV_reinforce_western_naval_bases
+        cost = 2
+        x = 0
+        y = 1
+        completion_reward = {
+            KLI = {
+                add_state_core = 910
+                add_state_core = 124
+                add_state_core = 145
+            }
+            swap_ideas = {
+                remove_idea = Legacy_of_the_Saaremaa_Purge
+                add_idea = kli_rising_spirits
+            }
+            set_cosmetic_tag = KLI_Baltic_Federation
+        }
+    }
+
+    #The greater Estonian-Baltic war
+    focus = {
+        id = the_war_with_estonia
+        relative_position_id = the_baltic_island_federation
+        prerequisite = { focus = the_baltic_island_federation }
+        mutually_exclusive = { focus = infiltrating_tallinn }
+        available = { has_war_with = EST }
+        icon = GFX_focus_SOV_reinforce_western_naval_bases
+        cost = 5
+        x = 1
+        y = 1
+        bypass = {
+            has_war_with = EST
+        }
+    }
+
+    #the "peacefull" option
+    focus = {
+        id = infiltrating_tallinn
+        relative_position_id = the_baltic_island_federation
+        prerequisite = { focus = the_baltic_island_federation }
+        mutually_exclusive = { focus = the_war_with_estonia }
+        available = { has_war_with = EST }
+        icon = GFX_focus_SOV_reinforce_western_naval_bases
+        cost = 5
+        x = -1
+        y = 1
+        bypass = {
+            NOT = { has_war_with = EST}
+        }
+    }
+
+    focus = {
+        id = land_near_parnu
+        relative_position_id = infiltrating_tallinn
+        prerequisite = { focus = infiltrating_tallinn }
+        available = {
+            has_tech = tech_trucks
+            has_equipment = { motorized_equipment > 99 }
+        }
+        mutually_exclusive = { focus = striaght_into_tallinn }
+        x = 0
+        y = 1
+    } 
+
+    focus = {
+        id = striaght_into_tallinn
+        relative_position_id = infiltrating_tallinn
+        prerequisite = { focus = infiltrating_tallinn }
+        available = {
+            has_tech = landing_craft
+        }
+        mutually_exclusive = { focus = land_near_parnu }
+        x = -2
+        y = 1
+    }
+
+    focus = {
+        id = the_new_and_improved_Estonia
+        relative_position_id = the_baltic_island_federation
+        prerequisite = { focus = striaght_into_tallinn focus = land_near_parnu }
+        x = 0
+        y = 3
+    }
+
+    #the goofy focusses
+    focus = {
         id = bullets_cannot_damage_this_vehicle
         icon = GFX_focus_NZL_bob_semple_tank
         cost = 10
@@ -246,7 +414,6 @@ focus_tree = {
         y = 0
         completion_reward = {
             add_tech_bonus = {
-                
                 name = armor_bonus
 				bonus = 1.0
 				uses = 1

@@ -87,4 +87,9 @@ spriteTypes = {
         name = "GFX_idea_KLI_Random"
         texturefile = "gfx/interface/ideas/Random_Minister.png"
     }
+
+    spriteType = {
+        name = "GFX_idea_KLI_rising_spirit"
+        texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
+    }
 }
